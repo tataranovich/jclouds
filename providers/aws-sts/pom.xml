@@ -40,6 +40,17 @@
     <test.aws-sts.credential>${test.aws.credential}</test.aws-sts.credential>
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
   <dependencies>
     <dependency>
       <groupId>org.apache.jclouds.api</groupId>
