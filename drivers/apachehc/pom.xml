@@ -30,6 +30,17 @@
   <name>jclouds Apache Http Components Client</name>
   <description>Apache HttpComponents client</description>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>org.apache.jclouds</groupId>

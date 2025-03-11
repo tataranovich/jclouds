@@ -30,6 +30,17 @@
   <name>jclouds enterprise Module</name>
   <description>jclouds enterprise configuration</description>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>org.apache.jclouds</groupId>
